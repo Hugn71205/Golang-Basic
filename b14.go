@@ -7,7 +7,7 @@ import (
 	"fmt"
 )
 
-func main() {
+func buoi14() {
 	// buoi5()
 
 	// Vong lap menu
