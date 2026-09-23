@@ -6,7 +6,7 @@ type SinhVien struct{
 	age int
 	class string
 }
-func main() {
+func buoi15() {
 	//cac cach khai bao map
 
 	//khai bao truc tiep
