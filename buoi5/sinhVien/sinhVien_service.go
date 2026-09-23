@@ -1,9 +1,8 @@
 package sinhvien
 
 import (
+	"Demo/buoi5/utils"
 	"fmt"
-
-	"Demo/utils"
 )
 
 var studentList []Student
@@ -31,9 +30,9 @@ func addStudent() {
 	}
 
 	student := Student{
-		Id: id,
-		Name: name,
-		Class: class,
+		Id:     id,
+		Name:   name,
+		Class:  class,
 		Scores: scores,
 	}
 
@@ -68,14 +67,14 @@ func updateStudent() {
 
 			newScore := make([]float64, len(s.Scores))
 			for idx, score := range s.Scores {
-				temp := fmt.Sprintf("- Nhap diem %d (%.2f): ", idx + 1, score)
+				temp := fmt.Sprintf("- Nhap diem %d (%.2f): ", idx+1, score)
 				newScore[idx] = utils.GetOptionalPostiveFloat(temp, score)
 			}
 
 			studentList[i] = Student{
-				Id: id,
-				Name: name,
-				Class: class,
+				Id:     id,
+				Name:   name,
+				Class:  class,
 				Scores: newScore,
 			}
 
@@ -142,7 +141,7 @@ func StudentMenu() {
 		default:
 			fmt.Println("❌ Lua chon khong hop le!")
 		}
-	
+
 		utils.ReadInput("\nNhan phim Enter de tiep tuc...")
 	}
 }

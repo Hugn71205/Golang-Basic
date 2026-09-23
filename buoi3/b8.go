@@ -1,10 +1,10 @@
 package main
 
 import (
-	hung "Demo/Hung"
-	quynh "Demo/Quynh"
-	tung "Demo/Tung"
-	"Demo/service"
+	hung "Demo/buoi3/Hung"
+	quynh "Demo/buoi3/Quynh"
+	tung "Demo/buoi3/Tung"
+	"Demo/buoi3/service"
 	"fmt"
 )
 
@@ -44,8 +44,8 @@ func checkDulieu(val interface{}) {
 		fmt.Printf("Gia tri la: %s\n", val)
 	case bool:
 		fmt.Printf("Gia tri la: %t\n", val)
-	default: 
-		fmt.Printf("Gia tri (%T) khong hop le!\n",val)
+	default:
+		fmt.Printf("Gia tri (%T) khong hop le!\n", val)
 	}
 }
 func buoi8() {

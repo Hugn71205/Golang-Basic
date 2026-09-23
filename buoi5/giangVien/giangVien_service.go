@@ -1,9 +1,8 @@
 package giangvien
 
 import (
+	"Demo/buoi5/utils"
 	"fmt"
-
-	"Demo/utils"
 )
 
 var teacherList []Teacher
@@ -65,11 +64,11 @@ func updateTeacher() {
 			bonus := utils.GetOptionalPostiveFloat(fmt.Sprintf("- Nhap thuong (%.2f): ", t.Bonus), t.Bonus)
 
 			teacherList[i] = Teacher{
-				Id: id,
-				Name: name,
-				Subject: subject,
+				Id:         id,
+				Name:       name,
+				Subject:    subject,
 				BaseSalary: baseSalary,
-				Bonus: bonus,
+				Bonus:      bonus,
 			}
 
 			fmt.Println("✅ Cap nhat giang vien thanh cong!")

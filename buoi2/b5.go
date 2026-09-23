@@ -56,7 +56,6 @@ func buoi5() {
 		fmt.Println("=======MENU CHUC NANG=======")
 		fmt.Println("1. Bai 4: Tinh tong day so")
 		fmt.Println("2. Bai 5: Day so fibonacci")
-		fmt.Println("3. Chuc nang buoi 4")
 		fmt.Println("0. Thoat chuong trinh")
 		fmt.Println("============================")
 
@@ -109,11 +108,9 @@ func buoi5() {
 				}
 			}
 			fibo(numb)
-		case 3:
-			buoi4()
 		case 0:
 			fmt.Println("Chao tam biet!")
-			
+
 			return
 		default:
 			fmt.Println("Vui long chon so chuc nang hien co!")

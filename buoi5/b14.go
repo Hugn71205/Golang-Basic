@@ -1,9 +1,9 @@
 package main
 
 import (
-	giangvien "Demo/giangVien"
-	sinhvien "Demo/sinhVien"
-	"Demo/utils"
+	giangvien "Demo/buoi5/giangVien"
+	sinhvien "Demo/buoi5/sinhVien"
+	"Demo/buoi5/utils"
 	"fmt"
 )
 

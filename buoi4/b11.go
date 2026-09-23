@@ -1,4 +1,4 @@
-package mangsv
+package main
 
 import "fmt"
 
